@@ -1,13 +1,14 @@
+# Mass Spectrometry imaging and spatially-resolved Transcriptomics Integrator(MSTI)
 ## Overview
 
-With the advancement of technology, spatial omics is gradually transforming our understanding of the complexity of life. It provides a new perspective, enabling us to explore biological processes in the spatial dimension. Among the commonly used spatial omics approaches are spatial transcriptomics and spatial metabolomics; however, the joint analysis of spatial transcriptomics and spatial metabolomics remains challenging. we introduce the MSTI (Mass Spectrometry imaging and spatial Transcriptomics Integrator) framework, which utilizes a KEGG-guided graph to correlate features across the spatial transcriptomic and metabolomic datasets. MSTI employs a Variational Graph Auto-Encoders (VGAE) for dimensionality reduction and a LouvainBayesian clustering strategy to achieve accurate co-clustering of multi-omics data , facilitating the integration and correlation of molecular features across these layers[1]. In the MSTI framework, we accomplished cross-sample and cross-patient integration of spatial Transcriptomics and spatial metabolomics data.
+With the advancement of technology, spatial omics is gradually transforming our understanding of the complexity of life. It provides a new perspective, enabling us to explore biological processes in the spatial dimension. Among the commonly used spatial omics approaches are spatially-resolved Transcriptomics and Mass spectrometry imaging; however, the joint analysis of spatially-resolved Transcriptomics and Mass spectrometry imaging remains challenging. we introduce the MSTI (Mass Spectrometry imaging and spatially-resolved Transcriptomics Integrator) framework, which utilizes a KEGG-guided graph to correlate features across the spatially-resolved Transcriptomics and Mass spectrometry imaging datasets. MSTI employs a Variational Graph Auto-Encoders (VGAE) for dimensionality reduction and a LouvainBayesian clustering strategy to achieve accurate co-clustering of multi-omics data , facilitating the integration and correlation of molecular features across these layers[1]. In the MSTI framework, we accomplished cross-sample and cross-patient integration of spatial Transcriptomics and Mass spectrometry imaging data.
 
 [1]	KIPF T N, WELLING M. Variational Graph Auto-Encoders[J/OL] 2016, arXiv:1611.07308[https://ui.adsabs.harvard.edu/abs/2016arXiv161107308K.
 
 
-# Quick Start Guide for MSTI for ST data and MSI data
+## Quick Start Guide for MSTI for SRT data and MSI data
 
-## 🚀 Quick Start Guide for LouvainBayesian Analysis for SRT data
+### 🚀 Quick Start Guide for LouvainBayesian Analysis for SRT data
 
 We provide a demo R script named **`ST_analysis.R`** and a demo spatial transcriptomics (SRT) dataset named **`ST_outs`** for LouvainBayesian analysis.
 
@@ -25,7 +26,7 @@ Please follow the steps below to run the demo:
 4. **Run the Code**  
    Select all the code (`Ctrl + A`), then click the **"Run"** button to execute the analysis.
 
-## 🚀 Quick Start Guide for LouvainBayesian Analysis for MSI data
+### 🚀 Quick Start Guide for LouvainBayesian Analysis for MSI data
 
 We provide a demo R script named **`SM_analysis.R`** and a demo spatial transcriptomics (SRT) dataset named **`SM_outs`** for LouvainBayesian analysis.
 
@@ -43,14 +44,14 @@ Please follow the steps below to run the demo:
 4. **Run the Code**  
    Select all the code (`Ctrl + A`), then click the **"Run"** button to execute the analysis.
 
-## 🧪 ST&SM Integrator Demo
+### 🧪 SRT&MSI Integrator
 
 We provide demo folders for the **ST&SM Integrator**, which can be used to perform integrated analysis of spatial transcriptomics and spatial metabolomics data.  
 Currently, two datasets are available: **DCIS** and **IBC**.
 
 Please follow the steps below to run either demo:
 
-### 📁 Folder Structure
+#### 📁 Folder Structure
 - `MSTI/ST&SM Integrator/workflow/DCIS/`
 - `MSTI/ST&SM Integrator/workflow/IBC/`
 
@@ -61,7 +62,7 @@ Each folder contains:
 
 ---
 
-### ▶️ Steps to Run the Demo
+#### ▶️ Steps to Run the Demo
 
 1. **Place Files in the Same Directory**  
    Ensure the following three files are located in the **same folder** (either `DCIS` or `IBC`):
